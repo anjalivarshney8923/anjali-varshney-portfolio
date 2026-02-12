@@ -26,7 +26,7 @@ const About = () => {
                     <div className="text-secondary">
                         <div className="flex items-center gap-4 mb-6">
                             <h2 className="text-3xl font-bold text-gray-100 flex items-center">
-                                <span className="text-neonBlue mr-2">01.</span> About Me
+                                About Me
                             </h2>
                             <div className="h-[1px] bg-gray-700 flex-grow max-w-[200px]"></div>
                         </div>
@@ -38,7 +38,7 @@ const About = () => {
 
                         <p className="mb-6 leading-relaxed">
                             Fast-forward to today, I'm a <span className="text-neonBlue">3rd Year B.Tech CSE student</span> at ABES Institute of Technology.
-                            I've had the privilege of working on various web applications, exploring <span className="text-neonBlue">Java</span> ecosystem, and building modern UIs with React.
+                            I have a strong foundation in the <span className="text-neonBlue">Java ecosystem</span> and <span className="text-neonBlue">Spring Boot</span>, along with extensive experience in building scalable web applications using <span className="text-neonBlue">React</span>, <span className="text-neonBlue">Node.js</span>, and <span className="text-neonBlue">PostgreSQL</span>.
                         </p>
 
                         <p className="mb-6 leading-relaxed">
@@ -63,6 +63,9 @@ const About = () => {
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="text-neonBlue">▹</span> Tailwind CSS
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span className="text-neonBlue">▹</span> PostgreSQL
                             </li>
                         </ul>
                     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaJava, FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaDatabase } from 'react-icons/fa';
-import { SiSpringboot, SiPython, SiC, SiJavascript, SiMysql, SiTailwindcss, SiGit } from 'react-icons/si';
+import { SiSpringboot, SiPython, SiC, SiJavascript, SiMysql, SiTailwindcss, SiGit, SiPostgresql } from 'react-icons/si';
 
 const skills = [
     {
@@ -24,11 +24,13 @@ const skills = [
         category: 'Backend', items: [
             { name: 'Node.js', icon: <FaNodeJs />, level: 70 },
             { name: 'Spring Boot', icon: <SiSpringboot />, level: 65 },
+            { name: 'PostgreSQL', icon: <SiPostgresql />, level: 70 },
         ]
     },
     {
         category: 'Database & Tools', items: [
             { name: 'MySQL', icon: <SiMysql />, level: 80 },
+            { name: 'PostgreSQL', icon: <SiPostgresql />, level: 70 },
             { name: 'Git', icon: <SiGit />, level: 85 },
         ]
     },
@@ -40,7 +42,7 @@ const Skills = () => {
             <div className="max-w-6xl mx-auto px-6 w-full">
                 <div className="flex items-center gap-4 mb-12">
                     <h2 className="text-3xl font-bold text-gray-100 flex items-center">
-                        <span className="text-neonBlue mr-2">02.</span> Skills
+                        <span className="text-neonBlue mr-2"></span> Skills
                     </h2>
                     <div className="h-[1px] bg-gray-700 flex-grow max-w-[200px]"></div>
                 </div>

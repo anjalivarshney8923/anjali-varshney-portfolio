@@ -49,7 +49,7 @@ const Navbar = () => {
                                 spy={true}
                                 offset={-70}
                             >
-                                <span className="text-neonPurple mr-1">0{['About', 'Skills', 'Projects', 'Experience', 'Contact'].indexOf(item) + 1}.</span> {item}
+                                {item}
                             </Link>
                         </li>
                     ))}

@@ -3,18 +3,11 @@ import { motion } from 'framer-motion';
 
 const experiences = [
     {
-        role: "Springboard Internship",
+        role: "Infosys Springboard Virtual Internship 6.0",
         company: "Infosys",
-        period: "June 2024 - August 2024",
-        description: "Successfully completed the Infosys Springboard Virtual Internship program. Acquired hands-on experience in full-stack web development technologies.",
+        period: "November 24, 2025 – January 21, 2026",
+        description: "Hands-on experience in Java Full Stack development including React, Node.js, Java, PostgreSQL.",
         skills: ["React", "Node.js", "Java", "PostgreSQL"],
-    },
-    {
-        role: "Hackathon Participant",
-        company: "Smart India Hackathon",
-        period: "Nov 2023",
-        description: "Participated in the national level hackathon, solving real-world problems. Collaborated with a team of 4 to build a prototype solution.",
-        skills: ["Teamwork", "Problem Solving", "Rapid Prototyping"],
     }
 ];
 
@@ -24,7 +17,7 @@ const Experience = () => {
             <div className="max-w-4xl mx-auto w-full px-6">
                 <div className="flex items-center gap-4 mb-16">
                     <h2 className="text-3xl font-bold text-gray-100 flex items-center">
-                        <span className="text-neonBlue mr-2">04.</span> Where I've Worked
+                        <span className="text-neonBlue mr-2"></span> Where I've Worked
                     </h2>
                     <div className="h-[1px] bg-gray-700 flex-grow max-w-[200px]"></div>
                 </div>
