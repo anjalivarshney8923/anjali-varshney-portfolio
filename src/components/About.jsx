@@ -3,71 +3,41 @@ import { motion } from 'framer-motion';
 
 const About = () => {
     return (
-        <section id="about" className="min-h-screen flex items-center justify-center bg-lightBg py-20 px-6">
-            <div className="max-w-6xl mx-auto w-full">
+        <section id="about" className="min-h-screen flex items-center justify-center bg-background py-20 px-6 relative z-10 w-full">
+            <div className="max-w-4xl mx-auto w-full">
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
-                    className="grid md:grid-cols-2 gap-12 items-center"
+                    className="text-center md:text-left"
                 >
-                    {/* Image Placeholder with Frame */}
-                    <div className="relative group mx-auto md:mx-0">
-                        <div className="absolute top-4 left-4 w-full h-full border-2 border-neonBlue rounded-lg transition-transform duration-300 group-hover:top-2 group-hover:left-2"></div>
-                        <div className="w-[300px] h-[300px] bg-gray-700 rounded-lg overflow-hidden grayscale hover:grayscale-0 transition duration-500 relative z-10">
-                            {/* Replace with actual image */}
-                            <div className="flex items-center justify-center h-full text-gray-500 bg-gray-800">
-                                User Image
-                            </div>
-                        </div>
+                    <div className="flex items-center gap-4 mb-8 justify-center md:justify-start">
+                        <h2 className="text-3xl font-bold text-gray-100 flex items-center">
+                            <span className="text-neonBlue mr-2">01.</span> About Me
+                        </h2>
+                        <div className="h-[1px] bg-gray-700 w-full max-w-[200px] hidden md:block"></div>
                     </div>
 
-                    <div className="text-secondary">
-                        <div className="flex items-center gap-4 mb-6">
-                            <h2 className="text-3xl font-bold text-gray-100 flex items-center">
-                                About Me
-                            </h2>
-                            <div className="h-[1px] bg-gray-700 flex-grow max-w-[200px]"></div>
-                        </div>
-
-                        <p className="mb-6 leading-relaxed">
-                            Hello! My name is Anjali Varshney and I enjoy creating things that live on the internet.
-                            My interest in full stack development started back in my first year of college when I decided to try editing custom Tumblr themes — turns out hacking together HTML & CSS is pretty fun!
+                    <div className="text-secondary text-lg leading-relaxed space-y-6">
+                        <p>
+                            I am a <span className="text-neonBlue">3rd Year B.Tech CSE student</span> at ABES Institute of Technology with a passion for backend engineering and system architecture.
+                            My journey in software development is driven by a strong desire to build scalable, efficient, and reliable systems.
                         </p>
 
-                        <p className="mb-6 leading-relaxed">
-                            Fast-forward to today, I'm a <span className="text-neonBlue">3rd Year B.Tech CSE student</span> at ABES Institute of Technology.
-                            I have a strong foundation in the <span className="text-neonBlue">Java ecosystem</span> and <span className="text-neonBlue">Spring Boot</span>, along with extensive experience in building scalable web applications using <span className="text-neonBlue">React</span>, <span className="text-neonBlue">Node.js</span>, and <span className="text-neonBlue">PostgreSQL</span>.
+                        <p>
+                            I have developed a robust foundation in the <span className="text-neonBlue">Java ecosystem</span>, specializing in <span className="text-neonBlue">Spring Boot</span> for enterprise-grade applications.
+                            My expertise extends to designing <span className="text-neonBlue">RESTful APIs</span>, optimizing database schemas with <span className="text-neonBlue">MySQL & PostgreSQL</span>, and creating responsive frontends using <span className="text-neonBlue">React</span>.
                         </p>
 
-                        <p className="mb-6 leading-relaxed">
-                            I am currently looking for opportunities to apply my skills in a professional environment and contribute to innovative projects.
+                        <p>
+                            Beyond coding, I focus on writing clean, maintainable code and understanding the "why" behind architectural decisions.
+                            I am currently exploring microservices and cloud-native technologies to broaden my understanding of distributed systems.
                         </p>
 
-                        <ul className="grid grid-cols-2 gap-2 font-mono text-sm max-w-sm mt-8">
-                            <li className="flex items-center gap-2">
-                                <span className="text-neonBlue">▹</span> Java (DSA)
-                            </li>
-                            <li className="flex items-center gap-2">
-                                <span className="text-neonBlue">▹</span> React.js
-                            </li>
-                            <li className="flex items-center gap-2">
-                                <span className="text-neonBlue">▹</span> Spring Boot
-                            </li>
-                            <li className="flex items-center gap-2">
-                                <span className="text-neonBlue">▹</span> Node.js
-                            </li>
-                            <li className="flex items-center gap-2">
-                                <span className="text-neonBlue">▹</span> MySQL
-                            </li>
-                            <li className="flex items-center gap-2">
-                                <span className="text-neonBlue">▹</span> Tailwind CSS
-                            </li>
-                            <li className="flex items-center gap-2">
-                                <span className="text-neonBlue">▹</span> PostgreSQL
-                            </li>
-                        </ul>
+                        <p>
+                            I am eager to contribute to a product-based organization where I can apply my full-stack skills to solve complex problems and deliver impact.
+                        </p>
                     </div>
                 </motion.div>
             </div>

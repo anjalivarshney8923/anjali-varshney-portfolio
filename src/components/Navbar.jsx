@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import { Link } from 'react-scroll';
 
-const Navbar = () => {
+const Navbar = ({ openResume }) => {
     const { scrollYProgress } = useScroll();
     const scaleX = useSpring(scrollYProgress, {
         stiffness: 100,
@@ -38,24 +38,28 @@ const Navbar = () => {
                 </div>
 
                 <ul className="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
-                    {['About', 'Skills', 'Projects', 'Experience', 'Contact'].map((item) => (
-                        <li key={item}>
-                            <Link
-                                to={item.toLowerCase()}
-                                smooth={true}
-                                duration={500}
-                                className="cursor-pointer hover:text-neonBlue transition duration-300"
-                                activeClass="text-neonBlue"
-                                spy={true}
-                                offset={-70}
-                            >
-                                {item}
-                            </Link>
-                        </li>
-                    ))}
+                    <li className="cursor-pointer hover:text-neonBlue transition duration-300">
+                        <Link to="hero" smooth={true} duration={500} offset={-70}>Home</Link>
+                    </li>
+                    <li className="cursor-pointer hover:text-neonBlue transition duration-300">
+                        <Link to="about" smooth={true} duration={500} offset={-70}>About</Link>
+                    </li>
+                    <li className="cursor-pointer hover:text-neonBlue transition duration-300">
+                        <Link to="tech-stack" smooth={true} duration={500} offset={-70}>Tech Stack</Link>
+                    </li>
+                    
+                    <li className="cursor-pointer hover:text-neonBlue transition duration-300">
+                        <Link to="featured-project" smooth={true} duration={500} offset={-70}>Projects</Link>
+                    </li>
+                    <li className="cursor-pointer hover:text-neonBlue transition duration-300">
+                        <Link to="experience" smooth={true} duration={500} offset={-70}>Experience</Link>
+                    </li>
+                    <li className="cursor-pointer hover:text-neonBlue transition duration-300">
+                        <Link to="contact" smooth={true} duration={500} offset={-70}>Contact</Link>
+                    </li>
                 </ul>
 
-                <button className="hidden md:block px-6 py-2 border border-neonBlue text-neonBlue rounded hover:bg-neonBlue/10 transition duration-300 font-mono text-xs">
+                <button onClick={openResume} className="hidden md:block px-6 py-2 border border-neonBlue text-neonBlue rounded hover:bg-neonBlue/10 transition duration-300 font-mono text-xs">
                     Resume
                 </button>
 

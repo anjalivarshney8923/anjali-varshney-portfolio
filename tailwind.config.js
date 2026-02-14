@@ -25,6 +25,28 @@ export default {
       },
       animation: {
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'scroll': 'scroll 2s ease-in-out infinite',
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateY(0)', opacity: '1' },
+          '100%': { transform: 'translateY(10px)', opacity: '0' },
+        },
+        'gradient-x': {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center'
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center'
+          },
+        },
+      },
+      animation: {
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'scroll': 'scroll 2s ease-in-out infinite',
+        'gradient-x': 'gradient-x 15s ease infinite',
       },
     },
   },

@@ -6,20 +6,26 @@ const experiences = [
         role: "Infosys Springboard Virtual Internship 6.0",
         company: "Infosys",
         period: "November 24, 2025 – January 21, 2026",
-        description: "Hands-on experience in Java Full Stack development including React, Node.js, Java, PostgreSQL.",
-        skills: ["React", "Node.js", "Java", "PostgreSQL"],
+        points: [
+            "Got trained in full stack development using React & Java",
+            "Built Global IPI Platform",
+            "Integrated PostgreSQL database",
+            "Developed REST APIs",
+            "Understood MVC architecture",
+            "Worked with version control (Git)"
+        ]
     }
 ];
 
 const Experience = () => {
     return (
-        <section id="experience" className="min-h-screen py-20 bg-background relative overflow-hidden flex items-center">
+        <section id="experience" className="min-h-screen py-20 bg-background relative overflow-hidden flex items-center z-10 w-full">
             <div className="max-w-4xl mx-auto w-full px-6">
                 <div className="flex items-center gap-4 mb-16">
                     <h2 className="text-3xl font-bold text-gray-100 flex items-center">
-                        <span className="text-neonBlue mr-2"></span> Where I've Worked
+                        <span className="text-neonBlue mr-2">05.</span> Where I've Worked
                     </h2>
-                    <div className="h-[1px] bg-gray-700 flex-grow max-w-[200px]"></div>
+                    <div className="h-[1px] bg-gray-700 flex-grow max-w-[200px] hidden md:block"></div>
                 </div>
 
                 <div className="relative border-l-2 border-slate-800 ml-4 md:ml-10 space-y-12">
@@ -30,7 +36,7 @@ const Experience = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                             viewport={{ once: true }}
-                            className="relative pl-8 md:pl-12"
+                            className="relative pl-8 md:pl-12 text-left"
                         >
                             {/* Timeline Dot */}
                             <span className="absolute -left-[9px] top-0 bg-background border-2 border-neonBlue w-4 h-4 rounded-full"></span>
@@ -39,13 +45,11 @@ const Experience = () => {
                             <span className="text-sm font-mono text-secondary mb-4 block">{exp.period}</span>
 
                             <div className="bg-lightBg p-6 rounded-lg shadow-lg hover:shadow-neonBlue/10 transition duration-300 border border-transparent hover:border-gray-700">
-                                <p className="mb-4 text-secondary leading-relaxed">
-                                    {exp.description}
-                                </p>
-                                <ul className="flex flex-wrap gap-3">
-                                    {exp.skills.map((skill, i) => (
-                                        <li key={i} className="flex items-center gap-2 text-sm font-mono text-neonBlue">
-                                            <span>▹</span> {skill}
+                                <ul className="space-y-2">
+                                    {exp.points.map((point, i) => (
+                                        <li key={i} className="flex items-start gap-2 text-secondary text-sm md:text-base">
+                                            <span className="text-neonBlue mt-1">▹</span>
+                                            {point}
                                         </li>
                                     ))}
                                 </ul>
