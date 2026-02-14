@@ -15,7 +15,7 @@ const FeaturedCaseStudy = () => {
                     className="mb-16"
                 >
                     <h2 className="text-3xl font-bold text-gray-100 flex items-center">
-                        <span className="text-neonBlue mr-2">Featured Case Study</span>
+                        <span className="text-neonBlue mr-2">Projects</span>
                         <span className="h-[1px] bg-gray-700 flex-grow ml-4"></span>
                     </h2>
                 </motion.div>
@@ -47,7 +47,7 @@ const FeaturedCaseStudy = () => {
                             </motion.div>
 
                             <div className="flex flex-wrap justify-center md:justify-start gap-3 mb-8">
-                                {['Spring Boot', 'React', 'PostgreSQL', 'Microservices', 'JWT'].map((tech) => (
+                                {['Spring Boot', 'React', 'PostgreSQL', 'Google Patent API', 'JWT'].map((tech) => (
                                     <span key={tech} className="px-3 py-1 bg-white/5 text-white backdrop-blur-md rounded-full text-xs font-mono border border-white/10 shadow-sm">
                                         {tech}
                                     </span>
@@ -93,7 +93,7 @@ const FeaturedCaseStudy = () => {
                         {/* 3. System Architecture */}
                         <div>
                             <h4 className="text-neonBlue font-mono font-bold mb-8 text-lg text-center md:text-left">03. System Architecture</h4>
-                            <div className="bg-[#0a192f] border border-gray-700 p-8 rounded-xl flex flex-wrap justify-center md:justify-between items-center gap-8 md:gap-4 relative">
+                            <div className="bg-[#0a192f] border border-gray-700 p-8 rounded-xl grid grid-cols-2 md:flex md:justify-between items-center gap-8 md:gap-4 relative">
                                 {/* Connector Line (Desktop) */}
                                 <div className="absolute top-1/2 left-10 right-10 h-0.5 bg-gray-700 -z-0 hidden md:block"></div>
 
@@ -143,7 +143,7 @@ const FeaturedCaseStudy = () => {
 };
 
 const ArchitecturalBlock = ({ icon, label, sub }) => (
-    <div className="relative z-10 bg-[#112240] p-6 rounded-lg border border-gray-600 w-40 flex flex-col items-center text-center shadow-lg hover:-translate-y-2 transition duration-300">
+    <div className="relative z-10 bg-[#112240] p-6 rounded-lg border border-gray-600 w-full md:w-40 flex flex-col items-center text-center shadow-lg hover:-translate-y-2 transition duration-300">
         <div className="text-4xl mb-3">{icon}</div>
         <div className="font-bold text-gray-200 text-sm">{label}</div>
         <div className="text-xs text-mono text-neonBlue mt-1">{sub}</div>

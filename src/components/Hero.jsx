@@ -18,7 +18,7 @@ const Hero = ({ openResume }) => {
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="text-left"
+                    className="text-center md:text-left"
                 >
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -73,7 +73,7 @@ const Hero = ({ openResume }) => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.6 }}
-                        className="flex flex-wrap gap-4"
+                        className="flex flex-wrap gap-4 justify-center md:justify-start"
                     >
                         <a href="#featured-project" className="px-8 py-3 rounded border border-neonBlue text-neonBlue hover:bg-neonBlue/10 transition duration-300 font-mono">
                             View Projects
@@ -86,7 +86,7 @@ const Hero = ({ openResume }) => {
                         </button>
                     </motion.div>
 
-                    <div className="flex gap-6 mt-12 text-3xl text-secondary">
+                    <div className="flex gap-6 mt-12 text-3xl text-secondary justify-center md:justify-start">
                         <a href="https://github.com/anjalivarshney8923" target="_blank" rel="noopener noreferrer" className="hover:text-neonBlue transition-colors transform hover:scale-110">
                             <AiFillGithub />
                         </a>

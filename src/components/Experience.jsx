@@ -23,12 +23,12 @@ const Experience = () => {
             <div className="max-w-4xl mx-auto w-full px-6">
                 <div className="flex items-center gap-4 mb-16">
                     <h2 className="text-3xl font-bold text-gray-100 flex items-center">
-                        <span className="text-neonBlue mr-2">05.</span> Where I've Worked
+                        <span className="text-neonBlue mr-2"></span> Where I've Worked
                     </h2>
                     <div className="h-[1px] bg-gray-700 flex-grow max-w-[200px] hidden md:block"></div>
                 </div>
 
-                <div className="relative border-l-2 border-slate-800 ml-4 md:ml-10 space-y-12">
+                <div className="relative border-l-2 border-slate-800 ml-3 md:ml-10 space-y-12">
                     {experiences.map((exp, index) => (
                         <motion.div
                             key={index}
@@ -36,10 +36,10 @@ const Experience = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                             viewport={{ once: true }}
-                            className="relative pl-8 md:pl-12 text-left"
+                            className="relative pl-6 md:pl-12 text-left"
                         >
                             {/* Timeline Dot */}
-                            <span className="absolute -left-[9px] top-0 bg-background border-2 border-neonBlue w-4 h-4 rounded-full"></span>
+                            <span className="absolute -left-[5px] md:-left-[9px] top-0 bg-background border-2 border-neonBlue w-3 h-3 md:w-4 md:h-4 rounded-full"></span>
 
                             <h3 className="text-xl font-bold text-gray-100 mb-1">{exp.role} <span className="text-neonBlue">@ {exp.company}</span></h3>
                             <span className="text-sm font-mono text-secondary mb-4 block">{exp.period}</span>

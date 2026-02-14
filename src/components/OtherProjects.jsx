@@ -7,7 +7,7 @@ const projects = [
     {
         title: 'ShareBite',
         shortDescription: 'A scalable food donation platform connecting restaurants with NGOs to reduce food waste. Features secure donation tracking and real-time updates.',
-        tech: ['Java Spring Boot', 'React.js', 'PostgreSQL', 'Hibernate'],
+        tech: ['JSP', 'Servlet', 'MySQL', 'HTML', 'CSS'],
         githubLink: 'https://github.com/anjalivarshney8923',
         zipLink: '/assets/projects/sharebite.zip',
         copyLink: 'https://github.com/anjalivarshney8923/sharebite'
@@ -15,7 +15,7 @@ const projects = [
     {
         title: 'Weather App',
         shortDescription: 'Real-time weather fetching application utilizing OpenWeatherMap API. Provides accurate forecasts with a clean responsive interface.',
-        tech: ['React', 'Tailwind CSS', 'OpenWeatherMap API', 'Axios'],
+        tech: ['React', 'Bootstrap', 'OpenWeatherMap API', 'Axios'],
         githubLink: 'https://github.com/anjalivarshney8923',
         zipLink: '/assets/projects/weather-app.zip',
         copyLink: 'https://github.com/anjalivarshney8923/weather-app'

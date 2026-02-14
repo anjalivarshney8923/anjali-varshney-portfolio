@@ -14,7 +14,7 @@ const About = () => {
                 >
                     <div className="flex items-center gap-4 mb-8 justify-center md:justify-start">
                         <h2 className="text-3xl font-bold text-gray-100 flex items-center">
-                            <span className="text-neonBlue mr-2">01.</span> About Me
+                            <span className="text-neonBlue mr-2"></span> About Me
                         </h2>
                         <div className="h-[1px] bg-gray-700 w-full max-w-[200px] hidden md:block"></div>
                     </div>
