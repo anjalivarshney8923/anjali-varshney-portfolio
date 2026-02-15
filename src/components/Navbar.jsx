@@ -49,6 +49,7 @@ const Navbar = ({ openResume }) => {
         { name: 'Projects', to: 'featured-project' },
         { name: 'Experience', to: 'experience' },
         { name: 'Contact', to: 'contact' },
+        { name: 'Certifications', to: 'certifications' },
     ];
 
     return (

@@ -93,6 +93,13 @@ const Hero = ({ openResume }) => {
                         <a href="https://www.linkedin.com/in/anjali-varshney-7703302a2/" target="_blank" rel="noopener noreferrer" className="hover:text-neonBlue transition-colors transform hover:scale-110">
                             <AiFillLinkedin />
                         </a>
+
+                        <a 
+                            href="mailto:anjalivarshney405@gmail.com?subject=Portfolio Inquiry"
+                            className="hover:text-neonBlue transition-colors transform hover:scale-110"
+                        >
+                            <AiOutlineMail />
+                        </a>    
                     </div>
 
                 </motion.div>

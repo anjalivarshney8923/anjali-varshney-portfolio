@@ -165,6 +165,16 @@ const Contact = () => {
                             <AiFillLinkedin />
                         </motion.a>
 
+                        <motion.a
+                            whileHover={{ y: -5, color: '#00ffff' }}
+                            href="mailto:anjalivarshney405@gmail.com?subject=Portfolio Inquiry"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 transition duration-300"
+                        >
+                            <AiOutlineMail />
+                        </motion.a>
+
                     </div>
 
                     <footer className="mt-12 text-gray-600 text-sm font-mono">
