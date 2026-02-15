@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { SiLeetcode, SiHackerrank } from 'react-icons/si';
+import { SiCodechef} from 'react-icons/si';
 
 const CodingProfiles = () => {
     return (
@@ -13,28 +13,17 @@ const CodingProfiles = () => {
 
                 <div className="grid md:grid-cols-2 gap-12 justify-center">
                     {/* LeetCode */}
-                    <a href="https://leetcode.com/u/anjali_varshney/" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.codechef.com/users/anjali_8923" target="_blank" rel="noopener noreferrer"
                         className="flex items-center gap-4 p-6 bg-lightBg rounded-lg border border-gray-700 hover:border-orange-500 transition duration-300 group shadow-lg hover:shadow-orange-500/20 transform hover:-translate-y-1">
                         <div className="text-5xl text-orange-500 group-hover:scale-110 transition duration-300">
-                            <SiLeetcode />
+                            <SiCodechef />
                         </div>
                         <div>
-                            <h4 className="text-2xl font-bold text-gray-100 group-hover:text-orange-500 transition duration-300">LeetCode</h4>
+                            <h4 className="text-2xl font-bold text-gray-100 group-hover:text-orange-500 transition duration-300">CodeChef</h4>
                             <p className="text-gray-400 text-sm mt-1">Check out my problem solving journey</p>
                         </div>
                     </a>
 
-                    {/* HackerRank */}
-                    <a href="https://www.hackerrank.com/profile/anjalivarshney41" target="_blank" rel="noopener noreferrer"
-                        className="flex items-center gap-4 p-6 bg-lightBg rounded-lg border border-gray-700 hover:border-green-500 transition duration-300 group shadow-lg hover:shadow-green-500/20 transform hover:-translate-y-1">
-                        <div className="text-5xl text-green-500 group-hover:scale-110 transition duration-300">
-                            <SiHackerrank />
-                        </div>
-                        <div>
-                            <h4 className="text-2xl font-bold text-gray-100 group-hover:text-green-500 transition duration-300">HackerRank</h4>
-                            <p className="text-gray-400 text-sm mt-1">Check out my problem solving journey</p>
-                        </div>
-                    </a>
                 </div>
             </div>
         </section>

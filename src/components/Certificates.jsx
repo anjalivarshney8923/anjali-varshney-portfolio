@@ -38,6 +38,14 @@ const Certificates = () => {
             date: "2023",
             link: "/assets/certificates/nitttr-data-science.pdf",
             description: "Data Science methodologies and practical implementations."
+        },
+
+        {
+            title: "Data Structures By Codechef",
+            organization: "Codechef",
+            date: "2025",
+            link: "/assets/certificates/data-structures-by-codechef.pdf",
+            description: "Data Structures And Algorithms By Codechef"
         }
     ];
 

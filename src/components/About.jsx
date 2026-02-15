@@ -31,12 +31,9 @@ const About = () => {
                         </p>
 
                         <p>
-                            Beyond coding, I focus on writing clean, maintainable code and understanding the "why" behind architectural decisions.
                             I am currently exploring microservices and cloud-native technologies to broaden my understanding of distributed systems.
-                        </p>
-
-                        <p>
                             I am eager to contribute to a product-based organization where I can apply my full-stack skills to solve complex problems and deliver impact.
+                            
                         </p>
                     </div>
                 </motion.div>
